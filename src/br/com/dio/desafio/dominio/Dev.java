@@ -24,7 +24,7 @@ public class Dev {
         }
 
         else {
-            System.err.println("Voce nao esta matriculado em nenhum conteudo(Curso e/ou Mentoria)");
+            System.err.println("Voce nao esta matriculado em nenhum conteudo(br.com.dio.desafio.dominio.Curso e/ou Mentoria)");
         }
     }
 

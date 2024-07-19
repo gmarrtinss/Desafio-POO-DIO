@@ -1,4 +1,5 @@
 import br.com.dio.desafio.dominio.Bootcamp;
+import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -8,14 +9,14 @@ public class Main {
     public static void main(String[] args){
 
         Curso curso1 = new Curso();
-        curso1.setTitulo("Curso Java");
-        curso1.setDescricacao("Curso sobre Java: Do Basico ao Avancado");
+        curso1.setTitulo("br.com.dio.desafio.dominio.Curso Java");
+        curso1.setDescricacao("br.com.dio.desafio.dominio.Curso sobre Java: Do Basico ao Avancado");
         curso1.setCargaHoraria(100);
 
 
         Curso curso2 = new Curso();
-        curso2.setTitulo("Curso Python");
-        curso2.setDescricacao("Curso sobre Python: Do Basico ao Avancado");
+        curso2.setTitulo("br.com.dio.desafio.dominio.Curso Python");
+        curso2.setDescricacao("br.com.dio.desafio.dominio.Curso sobre Python: Do Basico ao Avancado");
         curso2.setCargaHoraria(50);
 
         Mentoria mentoria1 = new Mentoria();

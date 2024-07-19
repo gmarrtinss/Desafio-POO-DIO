@@ -1,4 +1,4 @@
-import br.com.dio.desafio.dominio.Conteudo;
+package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo {
 
@@ -23,7 +23,7 @@ public class Curso extends Conteudo {
 
     @Override
     public String toString() {
-        return "Curso{" +
+        return "br.com.dio.desafio.dominio.Curso{" +
                 "titulo='" + getTitulo() + '\'' +
                 ", descricacao='" + getDescricacao() + '\'' +
                 ", cargaHoraria=" + cargaHoraria +

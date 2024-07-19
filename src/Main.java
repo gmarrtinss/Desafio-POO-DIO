@@ -1,3 +1,5 @@
+import br.com.dio.desafio.dominio.Bootcamp;
+import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
@@ -21,9 +23,35 @@ public class Main {
         mentoria1.setDescricacao("Mentoria voltada para os jovens buscando insercao no mercado de trabalho");
         mentoria1.setData(LocalDate.now());
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria1);
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("BootCamp Java Back-End 2024");
+        bootcamp.setDescricao("Bootcamp Java do Basico ao Avancado: POO e Banco de Dados");
+        bootcamp.getConteudosBoot().add(curso1);
+        bootcamp.getConteudosBoot().add(curso2);
+        bootcamp.getConteudosBoot().add(mentoria1);
+
+        Dev devGuilherme = new Dev();
+        devGuilherme.setNome("Guilherme Martins");
+        devGuilherme.inscreverBootCamp(bootcamp);
+        System.out.println(devGuilherme.getNome() + " Matriculado em: " + devGuilherme.getConteudosInscritos());
+        devGuilherme.avancar();
+        System.out.println(devGuilherme.getNome() + " Matriculado em: " + devGuilherme.getConteudosInscritos());
+        System.out.println("Conteudos concluidos de " + devGuilherme.getNome() + " " + devGuilherme.getConteudosConcluidos());
+
+
+        System.out.println("---");
+
+        Dev devJulia = new Dev();
+        devJulia.inscreverBootCamp(bootcamp);
+        devJulia.setNome("Julia");
+        System.out.println(devJulia.getNome() + " Matriculado em: " + devJulia.getConteudosInscritos());
+        devJulia.avancar();
+        System.out.println(devJulia.getNome() + " Matriculado em: " + devJulia.getConteudosInscritos());
+        System.out.println("Conteudos concluidos de " + devJulia.getNome() + " " + devJulia.getConteudosConcluidos());
+
+
+
+
 
     }
 
